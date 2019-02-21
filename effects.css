@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(pic.jpeg);
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+section .box{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+
+}
+section .box:before{
+    contain: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: url(image.jpg);
+    background-attachment: fixed;
+    filter: blur(8px);
+}
+section .box h2{
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    z-index: 2;
+}
+section .box p{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    z-index: 2;
+}
+@keyframes yourAnimation{
+    0%{
+        }
+    22%{
+        }
+}
+
+.elementToAnimate{
+    animation: yourAnimation 3s infinite 0s linear;
+}
